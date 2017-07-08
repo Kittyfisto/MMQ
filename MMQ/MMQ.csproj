@@ -51,5 +51,8 @@
     <Compile Include="V1\MemoryMappedQueueFactory.cs" />
     <Compile Include="V1\MemoryMappedQueueProducer.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="MMQ.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
