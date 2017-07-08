@@ -112,5 +112,21 @@ namespace MMQ.Test
 				message.Should().Equal(new byte[] {1, 2, 3, 4});
 			}
 		}
+
+		[Test]
+		[Description("Verifies that using a consumer when when it already has been disposed of results in an appropriate exception")]
+		public void TestDequeue3()
+		{
+			using (var queue = MemoryMappedQueue.Create("dawawdawd"))
+			using (var consumer = queue.CreateConsumer())
+			{
+				consumer.Dispose();
+				new Action(() => consumer.Dequeue())
+					.ShouldThrow<ObjectDisposedException>("because the consumer has been disposed of");
+				byte[] unused;
+				new Action(() => consumer.TryDequeue(out unused))
+					.ShouldThrow<ObjectDisposedException>("because the consumer has been disposed of");
+			}
+		}
 	}
 }
