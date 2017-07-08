@@ -95,5 +95,22 @@ namespace MMQ.Test
 				consumer.TryDequeue(out unused, TimeSpan.Zero).Should().BeFalse();
 			}
 		}
+
+		[Test]
+		[Description("Verifies that after a dequeue operation times out, the queue can still be used")]
+		public void TestDequeue2()
+		{
+			using (var queue = MemoryMappedQueue.Create("Test1"))
+			using (var producer = queue.CreateProducer())
+			using (var consumer = queue.CreateConsumer())
+			{
+				byte[] message;
+				consumer.TryDequeue(out message, TimeSpan.FromMilliseconds(1)).Should().BeFalse();
+
+				producer.Enqueue(new byte[] {1, 2, 3, 4});
+				consumer.TryDequeue(out message).Should().BeTrue();
+				message.Should().Equal(new byte[] {1, 2, 3, 4});
+			}
+		}
 	}
 }

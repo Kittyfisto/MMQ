@@ -72,8 +72,11 @@ namespace MMQ.V1
 					sleepTime = 0;
 				else if (i < 100)
 					sleepTime = 1;
-				else
+				else if (i < 1000)
 					sleepTime = 10;
+				else
+					sleepTime = 100;
+
 				Thread.Sleep(sleepTime);
 			}
 
