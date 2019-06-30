@@ -1,6 +1,8 @@
 # MMQ
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dqn0aug6qs46xt2y?svg=true)](https://ci.appveyor.com/project/Kittyfisto/mmq)
+[![NuGet](https://img.shields.io/nuget/dt/mmq.svg)](http://nuget.org/packages/mmq)
+[![NuGet](https://img.shields.io/nuget/v/mmq.svg)](http://nuget.org/packages/mmq)
 
 Queue backed by a memory mapped file for IPC
 
