@@ -1,6 +1,7 @@
 # MMQ
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dqn0aug6qs46xt2y?svg=true)](https://ci.appveyor.com/project/Kittyfisto/mmq)
+![AppVeyor tests](https://img.shields.io/appveyor/tests/Kittyfisto/mmq.svg?color=%234CC61E)
 [![NuGet](https://img.shields.io/nuget/dt/mmq.svg)](http://nuget.org/packages/mmq)
 [![NuGet](https://img.shields.io/nuget/v/mmq.svg)](http://nuget.org/packages/mmq)
 
