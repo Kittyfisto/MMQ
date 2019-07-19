@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MMQ.NETStandard", "MMQ.NETStandard\MMQ.NETStandard.csproj", "{2681DC7C-9EAF-40C7-B3E2-6E4F04392177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMQ.Test.Core", "MMQ.Test.Core\MMQ.Test.Core.csproj", "{3A2EEE6D-180A-485A-813E-6A7E43DCB46E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,19 @@ Global
 		{F0D39A0D-7BF0-46BA-A7F3-6FED179922C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0D39A0D-7BF0-46BA-A7F3-6FED179922C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0D39A0D-7BF0-46BA-A7F3-6FED179922C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2681DC7C-9EAF-40C7-B3E2-6E4F04392177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2681DC7C-9EAF-40C7-B3E2-6E4F04392177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2681DC7C-9EAF-40C7-B3E2-6E4F04392177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2681DC7C-9EAF-40C7-B3E2-6E4F04392177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2EEE6D-180A-485A-813E-6A7E43DCB46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2EEE6D-180A-485A-813E-6A7E43DCB46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2EEE6D-180A-485A-813E-6A7E43DCB46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2EEE6D-180A-485A-813E-6A7E43DCB46E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D22ECE32-4093-4C41-A28E-9843C4A6BAF9}
 	EndGlobalSection
 EndGlobal

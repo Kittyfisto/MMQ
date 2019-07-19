@@ -19,5 +19,9 @@
     <file src="..\bin\Release\MMQ.XML" target="lib\net45\" />
     <file src="..\bin\Release\MMQ.pdb" target="lib\net45\" />
     <file src="..\bin\Release\MMQ.dll" target="lib\net45\" />
+
+    <file src="..\bin\netstandard2.0\Release\MMQ.XML" target="lib\netstandard2.0\" />
+    <file src="..\bin\netstandard2.0\Release\MMQ.pdb" target="lib\netstandard2.0\" />
+    <file src="..\bin\netstandard2.0\Release\MMQ.dll" target="lib\netstandard2.0\" />
   </files>
 </package>
