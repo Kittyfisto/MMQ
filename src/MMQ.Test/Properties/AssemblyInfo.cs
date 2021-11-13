@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MMQ.Test")]
-[assembly: AssemblyCopyright("Copyright © Simon Mießler 2017")]
+[assembly: AssemblyCopyright("Copyright © Simon Mießler 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
